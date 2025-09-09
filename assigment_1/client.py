@@ -2,7 +2,7 @@ import socket
 
 def main():
     host = "127.1.1.1"  # Server IP (localhost for testing)
-    port = 6111         # Same as server port
+    port = 6112         # Same as server port
 
     client_name = "Client of STK"
 

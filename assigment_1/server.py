@@ -37,7 +37,7 @@ def handle_client(conn, addr, server_name, server_number):
 
 def main():
     host = "0.0.0.0"   # Listen on all interfaces
-    port = 6111
+    port = 6112
 
     server_name = "Server of STK"
     server_number = random.randint(1, 100)
