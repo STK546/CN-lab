@@ -1,9 +1,9 @@
 import random
 import matplotlib.pyplot as plt
 
-def tcp_congestion_control(rounds=30, loss_probability=0.2):
+def tcp_congestion_control(rounds=30, loss_probability=0.3):
     cwnd = 1
-    ssthresh = 16
+    ssthresh = 30
     cwnd_history = []
 
     for r in range(rounds):
