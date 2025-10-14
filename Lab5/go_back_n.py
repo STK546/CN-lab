@@ -9,7 +9,7 @@ def go_back_n(total_frames=10, window_size=4, loss_probability=0.3):
         print(f"\nWindow: {base} to {min(base + window_size - 1, total_frames - 1)}")
 
         for i in range(base, min(base + window_size, total_frames)):
-            print(f"📤 Sending Frame {i}")
+            print(f" Sending Frame {i}")
             next_frame += 1
 
         lost_frame = None
@@ -22,7 +22,7 @@ def go_back_n(total_frames=10, window_size=4, loss_probability=0.3):
                 print(f" ACK {i} received")
 
         if lost_frame is not None:
-            print(f"🔁 Retransmitting from Frame {lost_frame}...")
+            print(f" Retransmitting from Frame {lost_frame}...")
             next_frame = lost_frame
             time.sleep(1)
         else:
